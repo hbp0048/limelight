@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160922033240) do
+ActiveRecord::Schema.define(version: 20160928062439) do
 
   create_table "avatar_stages", force: :cascade do |t|
     t.integer  "stage_id"
@@ -47,10 +47,9 @@ ActiveRecord::Schema.define(version: 20160922033240) do
   end
 
   create_table "messages", force: :cascade do |t|
-    t.text     "content"
-    t.string   "user_id"
-    t.string   "integer"
-    t.string   "stage_id"
+    t.string   "content"
+    t.integer  "user_id"
+    t.integer  "stage_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
