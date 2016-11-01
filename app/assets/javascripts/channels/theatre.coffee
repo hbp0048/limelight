@@ -1,3 +1,7 @@
+# Coffeescript containing all the performance stage related functions. 
+# Currently contains drawing, audio, chat and backdrop functions for Javascript. Also contains action cables to handle broadcasting.
+# last revised on: 1/11/2016, by: Minju Park
+
 jQuery(document).on 'turbolinks:load', ->
   messages = $('#messages')
   if $('#messages').length > 0
