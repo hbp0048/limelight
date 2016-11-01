@@ -8,6 +8,8 @@ jQuery(document).on 'turbolinks:load', ->
     messages_to_bottom()
     
     doc = $(document)
+    
+    ################## DRAWING #####################################################
     canvas = $('#canvas')
     context = canvas[0].getContext('2d')
     prev = {}
@@ -16,6 +18,7 @@ jQuery(document).on 'turbolinks:load', ->
     timeSinceLastSend = $.now()
     size = 1
     
+    # changes brush color depending on the button click
     $('.color-option').click  ->
       color = $(this).data("color")
       if color == 'pink'
@@ -41,7 +44,8 @@ jQuery(document).on 'turbolinks:load', ->
           data: 
             'drawing_option': 'clear'
             'stage_id': $('#stage-id').val()
-      
+            
+    # changes brush size depending on the button click  
     $('.size-option').click ->
       size_option = $(this).data("size")
       
