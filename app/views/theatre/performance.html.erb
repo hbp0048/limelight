@@ -13,15 +13,17 @@
     
     <body class="theatre-body">
         <div class="row">
-        <div class= "col-md-7 col-lg-7">
+        <div class= "col-md-7 col-lg-8">
             <ul class="nav nav-tabs">
               <li class="active"><a data-toggle="tab" href="#drawing">Drawing</a></li>
               <li><a data-toggle="tab" href="#audio">Audio</a></li>
               <li><a data-toggle="tab" href="#backdrop">Backdrop</a></li>
+              
+              <li><a data-toggle="tab" href="#avatar">Avatar</a></li>
             </ul>
             <div class="tab-content">
               <div id="drawing" class="tab-pane fade in active">
-                   brush size <p class ="brush" id="brushSize">1</p>
+                   Brush size <p class ="brush" id="brushSize">1</p>
                   <button class="size-option" data-size="increase">
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
@@ -76,12 +78,12 @@
                 <%= render @stage_media %>
                 <button id="clearBackdrop">Clear</button>
               </div>
-              
+              </div>
                 <div class = "panel-body" style="display: block;">
     			    <canvas id="canvas" width="600" height="400">Sorry, your browser doesn't support this feature</canvas>
     			</div>
             </div>
-            <div class = "col-md-5 col-lg-5">
+            <div class = "col-md-5 col-lg-3">
                 <div class="panel panel-info" id="chat">
                     <div class="panel-heading">
                         UpStage Performance Stage Chat
@@ -128,8 +130,5 @@
                 </div>
             </div>
         </div>
-
-    
-    
     </body>
 </html>
